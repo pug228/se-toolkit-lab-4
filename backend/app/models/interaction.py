@@ -6,8 +6,8 @@ from sqlmodel import Field, SQLModel
 
 # Ensure referenced FK target tables are registered in SQLModel metadata
 # whenever InteractionLog is imported.
-from app.models.item import ItemRecord  # noqa: F401
-from app.models.learner import Learner  # noqa: F401
+from app.models.item import ItemRecord  # pyright: ignore[reportUnusedImport]
+from app.models.learner import Learner  # pyright: ignore[reportUnusedImport]
 
 
 class InteractionLog(SQLModel, table=True):
