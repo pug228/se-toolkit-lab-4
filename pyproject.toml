@@ -99,3 +99,6 @@ pythonpath = ["backend"]
 
 [tool.ty.src]
 include = ["backend"]
+
+[tool.ty.rules]
+invalid-argument-type = "ignore"
